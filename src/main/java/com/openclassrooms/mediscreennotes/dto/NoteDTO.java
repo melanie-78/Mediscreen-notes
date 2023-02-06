@@ -13,6 +13,8 @@ public class NoteDTO {
     private String id;
     @NotBlank(message = "patId is mandatory")
     private Integer patId;
+    @NotBlank(message = "patName is mandatory")
     private String patName;
+    @NotBlank(message = "observation is mandatory")
     private String observation;
 }
