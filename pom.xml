@@ -82,6 +82,13 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.5</version>
+				<configuration>
+					<excludes>
+						<exclude>/com/openclassrooms/mediscreennotes/dto/*</exclude>
+						<exclude>/com/openclassrooms/mediscreennotes/model/*</exclude>
+						<exclude>/com/openclassrooms/mediscreennotes/exceptions/*</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
